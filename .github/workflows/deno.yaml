@@ -15,4 +15,6 @@ jobs:
         echo 1
     - shell: deno run --allow-all {0}
       run: |
-        console.log(1111)
+        import { bgBlue, red, bold, italic } from "https://deno.land/std@0.71.0/fmt/colors.ts";
+        
+        console.log(bgBlue(italic(red(bold("Hello world!")))));
