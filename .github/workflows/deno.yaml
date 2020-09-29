@@ -8,6 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: denolib/setup-deno@v2
+    - shell: sh -ex {0}
+      run: |
+        echo 1  
     - shell: deno run --allow-all {0}
       run: |
         // Copyright 2018-2020 the Deno authors. All rights reserved. MIT license.
