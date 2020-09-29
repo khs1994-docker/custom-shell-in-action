@@ -18,3 +18,8 @@ jobs:
         import { bgBlue, red, bold, italic } from "https://deno.land/std@0.71.0/fmt/colors.ts";
         
         console.log(bgBlue(italic(red(bold("Hello world!")))));
+    - shell: /usr/bin/env sh -xc "deno run {0}"
+      run: |
+        import { bgBlue, red, bold, italic } from "https://deno.land/std@0.71.0/fmt/colors.ts";
+
+        console.log(bgBlue(italic(red(bold("Hello world!")))));
