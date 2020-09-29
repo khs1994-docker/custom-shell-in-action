@@ -13,7 +13,7 @@ jobs:
         echo $0
         
         echo 1
-    - shell: /usr/bin/env sh -xc "cat '{0}'"
+    - shell: /usr/bin/env sh -xc "cat '{0}' | deno run -"
       run: |
         import { bgBlue, red, bold, italic } from "https://deno.land/std@0.71.0/fmt/colors.ts";
         
